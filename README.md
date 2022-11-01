@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/introsectionwithdropdownnavigation-eBT-HkQQzM](https://www.frontendmentor.io/solutions/introsectionwithdropdownnavigation-eBT-HkQQzM)
+- Live Site URL: [https://dropdown-navigation-flax.vercel.app](https://dropdown-navigation-flax.vercel.app/)
 
 ### Built with
 
