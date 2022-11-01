@@ -11,12 +11,18 @@
   font-family: "Epilogue";
 }
 
+body {
+  overflow: hidden;
+}
+
+/* Navbar */
 nav {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
   align-items: center;
   justify-content: center;
   padding: 10px 30px;
+  width: 100vw;
 }
 
 .nav__links {
@@ -29,7 +35,6 @@ nav {
   display: none;
 }
 
-/* Dropdown Button */
 .dropbtn {
   color: var(--medium-gray);
   padding: 16px;
@@ -42,17 +47,16 @@ nav {
   color: var(--almost-black);
 }
 
-/* The container <div> - needed to position the dropdown content */
 .feature__dropdown,
 .company__dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
+  left: -50px;
   background-color: var(--almost-white);
   min-width: 160px;
   border-radius: 10px;
@@ -60,20 +64,17 @@ nav {
   z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 8px 16px;
   text-decoration: none;
   display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #eee;
 }
 
-/* Show the dropdown menu on hover */
 .feature__dropdown:hover .dropdown-content,
 .company__dropdown:hover .dropdown-content {
   display: block;
@@ -109,4 +110,76 @@ nav {
 
 .register__btn:hover {
   color: var(--almost-black);
+}
+
+/* Hero Section */
+.hero__page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1050px;
+  margin: auto;
+}
+
+.left {
+  padding: 140px 0 0 0;
+  margin-right: 150px;
+}
+
+.big__text {
+  font-size: 67px;
+}
+
+.down {
+  padding-bottom: 30px;
+}
+
+.small__text {
+  font-size: 22px;
+  color: var(--medium-gray);
+  padding-bottom: 40px;
+}
+
+.btn {
+  color: var(--almost-white);
+  background-color: var(--almost-black);
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  color: var(--almost-black);
+  background-color: var(--almost-white);
+}
+
+.img__sponsors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 0;
+}
+
+.desktop__img {
+  width: 350px;
+  height: 500px;
+}
+
+.mobile__img {
+  display: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--medium-gray);
+  text-align: center;
+  color: var(--almost-white);
+}
+
+footer a {
+  color: var(--almost-white);
 }
