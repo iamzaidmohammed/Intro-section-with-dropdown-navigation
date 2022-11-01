@@ -1,39 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Epilogue:wght@500,700&display=swap"
+    />
+    <title>Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="Logo" />
+      </div>
+      <div class="nav__links">
+        <div class="feature__dropdown">
+          <p class="dropbtn">
+            Features
+            <img src="./images/icon-arrow-down.svg" alt="Arrow down icon" />
+          </p>
+          <div class="dropdown-content">
+            <a href="#">
+              <img src="./images/icon-todo.svg" alt="Todo icon" /> Todo List</a
+            >
+            <a href="#">
+              <img src="./images/icon-calendar.svg" alt="Calender icon" />
+              Calender</a
+            >
+            <a href="#">
+              <img src="./images/icon-reminders.svg" alt="Remainders icon" />
+              Remainders</a
+            >
+            <a href="#">
+              <img src="./images/icon-planning.svg" alt="Planning icon" />
+              Planning</a
+            >
+          </div>
+        </div>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+        <div class="company__dropdown">
+          <p class="dropbtn">
+            Company
+            <img src="./images/icon-arrow-down.svg" alt="Arrow down icon" />
+          </p>
+          <div class="dropdown-content">
+            <a href="#">History</a>
+            <a href="#">Our Team</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+        <p class="careers">Careers</p>
+        <p class="about">About</p>
+      </div>
+      <div class="login__register">
+        <a href="#" class="login__btn">Login</a>
+        <a href="#" class="register__btn">Register</a>
+      </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+      <img src="./images/icon-close-menu.svg" alt="" />
+      <img src="./images/icon-menu.svg" alt="" />
+    </nav>
 
-  Features
-  Company
-  Careers
-  About
+    <section class="hero__page">
+      <div class="left">
+        <h1 class="big__text">Make remote work</h1>
 
-  Login
-  Register
+        <p class="small__text">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
 
-  Make remote work
+        <button class="btn">Learn more</button>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+        <div class="img__sponsors">
+          <img src="./images/client-databiz.svg" alt="" />
+          <img src="./images/client-audiophile.svg" alt="" />
+          <img src="./images/client-meet.svg" alt="" />
+          <img src="./images/client-maker.svg" alt="" />
+        </div>
+      </div>
+      <div class="right">
+        <img
+          class="desktop__img"
+          src="./images/image-hero-desktop.png"
+          alt="Hero image"
+        />
 
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <img
+          class="mobile__img"
+          src="./images/image-hero-mobile.png"
+          alt="Hero image"
+        />
+      </div>
+    </section>
+
+    <footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/zaidmohammed7" target="_blank"
+        >Zaid Mohammed Zainudeen</a
+      >.
+    </footer>
+  </body>
 </html>
