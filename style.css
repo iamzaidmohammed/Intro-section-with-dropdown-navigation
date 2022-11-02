@@ -12,7 +12,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* Navbar */
@@ -45,6 +45,10 @@ nav {
 
 .dropbtn:hover {
   color: var(--almost-black);
+}
+
+.dropbtn:hover img {
+  transform: rotate(180deg);
 }
 
 .feature__dropdown,
